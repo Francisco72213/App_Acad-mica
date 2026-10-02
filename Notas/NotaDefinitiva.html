@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#006633">
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h1>Calculadora de Notas</h1>
+
+    <p>Ingresa el número de evaluaciones que tiene la materia:</p>
+
+    <div class="configuracion">
+
+        <label for="cantidadEvaluaciones">
+            Número de evaluaciones:
+        </label>
+
+        <input 
+            type="number" 
+            id="cantidadEvaluaciones"
+            min="1"
+            max="20"
+            placeholder="Ej: 3"
+        >
+
+        <button id="btnContinuar">
+            Continuar
+        </button>
+
+    </div>
+
+    <!-- Aquí aparecerán las evaluaciones -->
+    <div id="evaluaciones"></div>
+
+    <!-- Botón para calcular -->
+    <button id="btnCalcular">
+        Calcular nota
+    </button>
+
+    <!-- Aquí aparecerá el resultado -->
+    <div id="resultado"></div>
+
+</div>
+
+        <a
+            href="../index.html"
+            class="volver">
+            ← Volver al menú principal
+        </a>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

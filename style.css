@@ -1,0 +1,504 @@
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f7f4;
+    color: #333333;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   CONTENEDOR PRINCIPAL
+   ===================================================== */
+
+.contenedor {
+    width: 92%;
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =====================================================
+   TÍTULO PRINCIPAL
+   ===================================================== */
+
+h1 {
+    color: #006633;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.descripcion {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   FORMULARIO INICIAL
+   ===================================================== */
+
+.campo {
+    margin-bottom: 25px;
+}
+
+.campo > label {
+    display: block;
+    font-weight: bold;
+    color: #006633;
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   INPUTS GENERALES
+   ===================================================== */
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #c9d8ce;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #ffffff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #006633;
+    box-shadow: 0 0 0 3px rgba(0, 102, 51, 0.12);
+}
+
+input::placeholder {
+    color: #999999;
+}
+
+
+/* =====================================================
+   OPCIONES SÍ / NO
+   ===================================================== */
+
+.opciones {
+    display: flex;
+    gap: 30px;
+    margin-top: 8px;
+}
+
+.opciones label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: normal;
+    color: #333333;
+    cursor: pointer;
+}
+
+.opciones input[type="radio"] {
+    accent-color: #006633;
+}
+
+
+/* =====================================================
+   BOTONES
+   ===================================================== */
+
+button {
+    display: block;
+    width: 100%;
+    padding: 13px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #006633;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #004d26;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+
+/* =====================================================
+   SECCIÓN DE MATERIAS
+   ===================================================== */
+
+#seccionMaterias {
+    margin-top: 35px;
+}
+
+#seccionMaterias h2 {
+    color: #006633;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #006633;
+}
+
+
+/* =====================================================
+   CADA MATERIA
+   ===================================================== */
+
+.materia {
+    display: grid;
+    grid-template-columns:
+        100px
+        minmax(250px, 1fr)
+        120px
+        120px;
+
+    column-gap: 15px;
+    align-items: center;
+
+    background-color: #f8fbf9;
+    border: 1px solid #d5e4da;
+    border-left: 5px solid #006633;
+    border-radius: 8px;
+
+    padding: 14px 16px;
+    margin-bottom: 12px;
+}
+
+
+/* =====================================================
+   TÍTULO DE LA MATERIA
+   ===================================================== */
+
+.materia h3 {
+    color: #006633;
+    font-size: 16px;
+    margin: 0;
+
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+/* =====================================================
+   ETIQUETAS
+   ===================================================== */
+
+.materia label {
+    font-weight: bold;
+    color: #444444;
+    margin: 0;
+}
+
+.materia label:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.materia label:nth-of-type(2) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.materia label:nth-of-type(3) {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+
+/* =====================================================
+   ORGANIZACIÓN DE LOS INPUTS
+   ===================================================== */
+
+.materia input:nth-of-type(1) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.materia input:nth-of-type(2) {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.materia input:nth-of-type(3) {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+
+/* =====================================================
+   CAMPOS DE LAS MATERIAS
+   ===================================================== */
+
+.materia input {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid #c9d8ce;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+.materia input:focus {
+    outline: none;
+    border-color: #006633;
+    box-shadow:
+        0 0 0 3px rgba(0, 102, 51, 0.10);
+}
+
+
+/* =====================================================
+   BOTÓN CALCULAR
+   ===================================================== */
+
+#botonCalcular {
+    background-color: #006633;
+    margin-top: 25px;
+}
+
+#botonCalcular:hover {
+    background-color: #004d26;
+}
+
+
+/* =====================================================
+   RESULTADO
+   ===================================================== */
+
+#resultado {
+    margin-top: 30px;
+}
+
+.resultado-promedio {
+    background-color: #eaf5ee;
+    border: 1px solid #b8d8c2;
+    border-left: 5px solid #006633;
+    border-radius: 8px;
+
+    padding: 25px;
+    text-align: center;
+}
+
+.resultado-promedio h2 {
+    color: #006633;
+    margin-bottom: 15px;
+}
+
+.resultado-promedio p {
+    font-size: 19px;
+    color: #333333;
+}
+
+.resultado-promedio strong {
+    color: #006633;
+}
+
+
+/* =====================================================
+   SITUACIÓN ACADÉMICA
+   ===================================================== */
+
+#situacionAcademica {
+    margin-top: 20px;
+    padding: 22px;
+
+    background-color: #f8fbf9;
+    border: 1px solid #c9d8ce;
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+#situacionAcademica h3 {
+    color: #006633;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+#textoSituacion {
+    font-size: 22px;
+    font-weight: bold;
+    color: #006633;
+    margin-bottom: 10px;
+}
+
+.nota-situacion {
+    font-size: 13px;
+    color: #777777;
+}
+
+
+/* =====================================================
+   ESTILOS ESPECÍFICOS DE LAS SITUACIONES
+   ===================================================== */
+
+/* Sobresaliente */
+
+.situacion-sobresaliente {
+    border-left: 5px solid #006633;
+    background-color: #eaf5ee;
+}
+
+
+/* Normal */
+
+.situacion-normal {
+    border-left: 5px solid #2d6a4f;
+    background-color: #f0f6f2;
+}
+
+
+/* Período de Prueba */
+
+.situacion-prueba {
+    border-left: 5px solid #d98c00;
+    background-color: #fff8e6;
+}
+
+
+/* Insuficiente */
+
+.situacion-insuficiente {
+    border-left: 5px solid #b3261e;
+    background-color: #fceeee;
+}
+
+
+/* =====================================================
+   BOTÓN VOLVER
+   ===================================================== */
+
+.volver {
+    display: block;
+    width: 92%;
+    max-width: 950px;
+
+    margin: 20px auto;
+    padding: 12px;
+
+    border-radius: 7px;
+
+    background-color: #e7eee9;
+    color: #006633;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.volver:hover {
+    background-color: #d8e5dd;
+}
+
+
+/* =====================================================
+   CELULARES
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .contenedor {
+        width: 94%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+
+    /* ---------------------------------------------
+       MATERIAS EN PANTALLAS PEQUEÑAS
+       --------------------------------------------- */
+
+    .materia {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 8px;
+    }
+
+    .materia h3 {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        margin-bottom: 5px;
+    }
+
+    .materia label:nth-of-type(1) {
+        grid-column: 1 / 3;
+        grid-row: 2;
+    }
+
+    .materia input:nth-of-type(1) {
+        grid-column: 1 / 3;
+        grid-row: 3;
+    }
+
+    .materia label:nth-of-type(2) {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .materia input:nth-of-type(2) {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .materia label:nth-of-type(3) {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .materia input:nth-of-type(3) {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+
+    /* ---------------------------------------------
+       SITUACIÓN ACADÉMICA EN CELULAR
+       --------------------------------------------- */
+
+    #situacionAcademica {
+        padding: 18px;
+    }
+
+    #situacionAcademica h3 {
+        font-size: 19px;
+    }
+
+    #textoSituacion {
+        font-size: 20px;
+    }
+
+
+    /* ---------------------------------------------
+       BOTÓN VOLVER
+       --------------------------------------------- */
+
+    .volver {
+        width: 94%;
+    }
+}

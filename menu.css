@@ -1,0 +1,197 @@
+/* ==========================================
+   CONFIGURACIÓN GENERAL
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6f4;
+    color: #333333;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* ==========================================
+   CONTENEDOR PRINCIPAL
+   ========================================== */
+
+.contenedor {
+    width: 100%;
+    max-width: 650px;
+
+    background-color: #ffffff;
+
+    padding: 40px 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+}
+
+
+/* ==========================================
+   TÍTULO
+   ========================================== */
+
+h1 {
+    color: #006633;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #666666;
+    font-size: 16px;
+
+    margin-bottom: 30px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   MENÚ
+   ========================================== */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* ==========================================
+   OPCIONES
+   ========================================== */
+
+.opcion {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: auto auto;
+
+    column-gap: 15px;
+
+    padding: 18px;
+
+    background-color: #ffffff;
+
+    border: 2px solid #d5e2db;
+
+    border-radius: 10px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    /* Necesario para el enlace de Promedios */
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   ICONOS
+   ========================================== */
+
+.icono {
+    grid-row: 1 / 3;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+}
+
+
+/* ==========================================
+   TÍTULOS
+   ========================================== */
+
+.titulo {
+    color: #006633;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+/* ==========================================
+   DESCRIPCIÓN DE CADA OPCIÓN
+   ========================================== */
+
+.texto {
+    color: #666666;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+/* ==========================================
+   EFECTO AL PASAR EL MOUSE
+   ========================================== */
+
+.opcion:hover {
+    border-color: #006633;
+
+    background-color: #f5faf7;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   CELULARES
+   ========================================== */
+
+@media (max-width: 500px) {
+
+    .contenedor {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .opcion {
+        grid-template-columns: 50px 1fr;
+
+        padding: 15px;
+    }
+
+    .icono {
+        font-size: 27px;
+    }
+
+    .titulo {
+        font-size: 17px;
+    }
+
+    .texto {
+        font-size: 13px;
+    }
+}

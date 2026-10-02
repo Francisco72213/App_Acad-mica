@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>APP Académica</title>
+
+    <link rel="stylesheet" href="menu.css">
+
+    <!-- Configuración de la aplicación -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Color de la aplicación en dispositivos móviles -->
+    <meta name="theme-color" content="#006633">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>APP Académica</h1>
+
+        <p class="descripcion">
+            Herramientas para calcular tus notas y promedios académicos
+        </p>
+
+        <div class="menu">
+
+            <!-- ==========================================
+                 NOTA DEFINITIVA
+                 ========================================== -->
+
+            <a href="Notas/NotaDefinitiva.html" class="opcion">
+
+                <span class="icono">🧮</span>
+
+                <span class="titulo">
+                    Nota definitiva
+                </span>
+
+                <span class="texto">
+                    Calcula tu nota final según los porcentajes de cada evaluación.
+                </span>
+
+            </a>
+
+
+            <!-- ==========================================
+                 NOTA QUE NECESITO
+                 ========================================== -->
+
+            <a href="NotaNecesito/NotaNecesito.html" class="opcion">
+
+                <span class="icono">🎯</span>
+
+                <span class="titulo">
+                    Nota que necesito
+                </span>
+
+                <span class="texto">
+                    Calcula qué nota necesitas para alcanzar una nota definitiva.
+                </span>
+
+            </a>
+
+
+            <!-- ==========================================
+                 PROMEDIOS
+                 ========================================== -->
+
+            <a href="AppProm.html" class="opcion">
+
+                <span class="icono">📊</span>
+
+                <span class="titulo">
+                    Promedios
+                </span>
+
+                <span class="texto">
+                    Calcula tus promedios académicos y analiza tu situación.
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Service Worker -->
+    <script>
+        if ("serviceWorker" in navigator) {
+
+            window.addEventListener("load", function() {
+
+                navigator.serviceWorker.register("./service-worker.js")
+                    .then(function() {
+                        console.log("Service Worker registrado correctamente.");
+                    })
+                    .catch(function(error) {
+                        console.error("Error al registrar el Service Worker:", error);
+                    });
+
+            });
+
+        }
+    </script>
+
+</body>
+
+</html>

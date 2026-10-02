@@ -1,0 +1,390 @@
+/* ==========================================
+   CONFIGURACIÓN GENERAL
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f3f6f4;
+
+    color: #333333;
+
+    min-height: 100vh;
+
+    padding: 20px;
+}
+
+
+/* ==========================================
+   CONTENEDOR PRINCIPAL
+   ========================================== */
+
+.contenedor {
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 30px auto;
+
+    background-color: #ffffff;
+
+    padding: 35px 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==========================================
+   TÍTULO
+   ========================================== */
+
+h1 {
+    color: #006633;
+
+    font-size: 32px;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+
+/* ==========================================
+   DESCRIPCIÓN
+   ========================================== */
+
+.descripcion {
+    color: #666666;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==========================================
+   SECCIONES
+   ========================================== */
+
+.seccion {
+    margin-bottom: 25px;
+
+    padding: 20px;
+
+    border: 1px solid #d5e2db;
+
+    border-radius: 10px;
+
+    background-color: #ffffff;
+}
+
+
+/* ==========================================
+   TÍTULOS DE LAS SECCIONES
+   ========================================== */
+
+h2 {
+    color: #006633;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================
+   TEXTOS Y ETIQUETAS
+   ========================================== */
+
+label {
+    display: block;
+
+    color: #444444;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+.seccion p {
+    color: #666666;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================
+   CAMPOS DE ENTRADA
+   ========================================== */
+
+input {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #bfcfc6;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    margin-bottom: 12px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #006633;
+
+    box-shadow: 0 0 0 2px rgba(0, 102, 51, 0.1);
+}
+
+
+/* ==========================================
+   BOTONES
+   ========================================== */
+
+button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #006633;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #004d26;
+}
+
+
+/* ==========================================
+   LISTA DE EVALUACIONES
+   ========================================== */
+
+#listaEvaluaciones {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* ==========================================
+   FILA DE EVALUACIÓN
+   ========================================== */
+
+.fila-evaluacion {
+    display: grid;
+
+    grid-template-columns: 1.2fr 1fr 1fr;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    border: 1px solid #d5e2db;
+
+    border-radius: 8px;
+
+    background-color: #f9fbfa;
+}
+
+
+/* ==========================================
+   MENSAJE DE LA ÚLTIMA EVALUACIÓN
+   ========================================== */
+
+.mensaje-calculo {
+    color: #006633 !important;
+
+    font-size: 12px !important;
+
+    margin: 0 !important;
+
+    font-weight: normal;
+}
+
+
+/* ==========================================
+   CAMPO "ESTO LO CALCULAREMOS"
+   ========================================== */
+
+.nota-calcularemos {
+    width: 100%;
+
+    padding: 11px;
+
+    background-color: #eef5f1;
+
+    border: 1px solid #c8dbd1;
+
+    border-radius: 7px;
+
+    color: #006633;
+
+    font-size: 14px;
+
+    text-align: center;
+}
+
+
+/* ==========================================
+   RESULTADO
+   ========================================== */
+
+.resultado {
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    background-color: #f1f8f4;
+
+    border: 2px solid #006633;
+
+    text-align: center;
+}
+
+.resultado h2 {
+    margin-bottom: 10px;
+}
+
+#mensajeResultado {
+    color: #444444;
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================
+   NOTA NECESARIA
+   ========================================== */
+
+.nota-necesaria {
+    color: #006633;
+
+    font-size: 38px;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   BOTÓN VOLVER
+   ========================================== */
+
+.volver {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    background-color: #e7eee9;
+
+    color: #006633;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.volver:hover {
+    background-color: #d8e5dd;
+}
+
+
+/* ==========================================
+   CELULARES
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .contenedor {
+        margin: 10px auto;
+
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .descripcion {
+        font-size: 14px;
+    }
+
+    .seccion {
+        padding: 15px;
+    }
+
+    /* Evaluaciones en formato vertical */
+
+    .fila-evaluacion {
+        grid-template-columns: 1fr;
+
+        gap: 5px;
+
+        padding: 15px;
+    }
+
+    .fila-evaluacion input {
+        margin-bottom: 10px;
+    }
+
+    .nota-necesaria {
+        font-size: 34px;
+    }
+}
