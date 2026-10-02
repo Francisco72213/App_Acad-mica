@@ -1,4 +1,4 @@
-const CACHE_NAME = "app-academica-v2";
+const CACHE_NAME = "app-academica-v3";
 
 const ARCHIVOS = [
     "./",
