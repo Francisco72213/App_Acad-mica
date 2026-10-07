@@ -1,288 +1,307 @@
 /* ==========================================
-CONFIGURACIÓN GENERAL
-========================================== */
+   CONFIGURACIÓN GENERAL
+   ========================================== */
 
 * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-font-family: Arial, Helvetica, sans-serif;
-background-color: #f3f6f4;
-color: #333333;
-min-height: 100vh;
-padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6f4;
+    color: #333333;
+    min-height: 100vh;
+    padding: 40px 20px;
 }
 
+
 /* ==========================================
-CONTENEDOR PRINCIPAL
-========================================== */
+   CONTENEDOR PRINCIPAL
+   ========================================== */
 
 .contenedor {
-width: 100%;
-max-width: 850px;
-margin: 0 auto;
-padding: 35px;
-background-color: #ffffff;
-border-radius: 12px;
-box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
 }
 
+
 /* ==========================================
-TÍTULO
-========================================== */
+   TÍTULO
+   ========================================== */
 
 h1 {
-margin-bottom: 25px;
-color: #006633;
-text-align: center;
-font-size: 32px;
-font-weight: 700;
+    margin-bottom: 25px;
+    color: #006633;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 p {
-margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
+
 /* ==========================================
-CONFIGURACIÓN INICIAL
-========================================== */
+   CONFIGURACIÓN INICIAL
+   ========================================== */
 
 .configuracion {
-display: flex;
-align-items: center;
-gap: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 
-
-margin-bottom: 25px;
-padding: 20px;
-
-background-color: #eef5f1;
-border-left: 5px solid #006633;
-border-radius: 6px;
-
-
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #eef5f1;
+    border-left: 5px solid #006633;
+    border-radius: 6px;
 }
 
 .configuracion label {
-color: #333333;
-font-weight: 700;
+    color: #333333;
+    font-weight: 700;
 }
 
+
 /* ==========================================
-CAMPOS DE ENTRADA
-========================================== */
+   CAMPOS DE ENTRADA
+   ========================================== */
 
 input {
-height: 40px;
-padding: 8px 10px;
-
-background-color: #ffffff;
-border: 1px solid #aebfb5;
-border-radius: 5px;
-
-color: #333333;
-font-size: 15px;
-outline: none;
-
+    height: 40px;
+    padding: 8px 10px;
+    background-color: #ffffff;
+    border: 1px solid #aebfb5;
+    border-radius: 5px;
+    color: #333333;
+    font-size: 15px;
+    outline: none;
 }
 
 input:focus {
-border-color: #006633;
-box-shadow: 0 0 0 3px rgba(0, 102, 51, 0.15);
+    border-color: #006633;
+    box-shadow: 0 0 0 3px rgba(0, 102, 51, 0.15);
 }
 
 #cantidadEvaluaciones {
-width: 90px;
+    width: 90px;
 }
 
+
 /* ==========================================
-EVALUACIONES
-========================================== */
+   EVALUACIONES
+   ========================================== */
 
 #evaluaciones {
-margin-top: 20px;
+    margin-top: 20px;
 }
 
 #evaluaciones > div {
-display: grid;
-grid-template-columns: 1fr 120px 120px;
-align-items: center;
-gap: 15px;
-
-margin-bottom: 10px;
-padding: 12px 15px;
-
-background-color: #ffffff;
-border: 1px solid #d2ddd7;
-border-radius: 7px;
-
-transition: border-color 0.2s, box-shadow 0.2s;
-
+    display: grid;
+    grid-template-columns: 1fr 120px 120px;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    background-color: #ffffff;
+    border: 1px solid #d2ddd7;
+    border-radius: 7px;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 #evaluaciones > div:hover {
-border-color: #006633;
-box-shadow: 0 2px 8px rgba(0, 102, 51, 0.12);
+    border-color: #006633;
+    box-shadow: 0 2px 8px rgba(0, 102, 51, 0.12);
 }
 
 #evaluaciones label {
-color: #006633;
-font-weight: 700;
+    color: #006633;
+    font-weight: 700;
 }
 
 .porcentaje,
 .nota {
-width: 100%;
-text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
+
 /* ==========================================
-BOTONES
-========================================== */
+   BOTONES
+   ========================================== */
 
 button {
-border: none;
-border-radius: 6px;
-
-color: #ffffff;
-font-size: 15px;
-font-weight: 700;
-
-cursor: pointer;
-
-transition:
-    background-color 0.2s,
-    transform 0.1s,
-    box-shadow 0.2s;
-
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        background-color 0.2s,
+        transform 0.1s,
+        box-shadow 0.2s;
 }
 
 button:active {
-transform: translateY(1px);
+    transform: translateY(1px);
 }
 
+
 /* ==========================================
-BOTÓN CONTINUAR
-========================================== */
+   BOTÓN CONTINUAR
+   ========================================== */
 
 #btnContinuar {
-padding: 11px 22px;
-
-background-color: #006633;
-color: #ffffff;
-
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-
+    padding: 11px 22px;
+    background-color: #006633;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 #btnContinuar:hover {
-background-color: #004d26;
-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.20);
+    background-color: #004d26;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.20);
 }
 
+
 /* ==========================================
-BOTÓN CALCULAR
-========================================== */
+   BOTÓN CALCULAR
+   ========================================== */
 
 #btnCalcular {
-display: block;
-
-margin: 25px auto 0;
-padding: 13px 32px;
-
-background-color: #005c2b;
-color: #ffffff;
-
-border: 2px solid #00451f;
-
-font-size: 16px;
-font-weight: 700;
-
-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.20);
-
+    display: block;
+    margin: 25px auto 0;
+    padding: 13px 32px;
+    background-color: #005c2b;
+    color: #ffffff;
+    border: 2px solid #00451f;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.20);
 }
 
 #btnCalcular:hover {
-background-color: #003d1b;
-border-color: #002f15;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    background-color: #003d1b;
+    border-color: #002f15;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+
 /* ==========================================
-RESULTADO
-========================================== */
+   RESULTADO PRINCIPAL
+   ========================================== */
 
 #resultado {
-margin-top: 25px;
-padding: 20px;
-
-background-color: #eef5f1;
-border: 1px solid #c5d8cd;
-border-radius: 8px;
-
-text-align: center;
-
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #eef5f1;
+    border: 1px solid #c5d8cd;
+    border-radius: 8px;
+    text-align: center;
 }
 
 #resultado h2 {
-margin-bottom: 10px;
-color: #005c2b;
-font-size: 22px;
+    margin-bottom: 10px;
+    color: #005c2b;
+    font-size: 22px;
 }
 
 #resultado p {
-margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
+
 /* ==========================================
-ADAPTACIÓN PARA CELULARES
-========================================== */
+   RESULTADO REDONDEADO
+   ========================================== */
+
+.resultado-redondeado {
+    margin-top: 15px;
+    padding: 18px 20px;
+    background-color: #f5f8f6;
+    border: 1px solid #c5d8cd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.resultado-redondeado p {
+    margin-bottom: 10px;
+    color: #444444;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.resultado-redondeado strong {
+    display: block;
+    color: #006633;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   ADAPTACIÓN PARA CELULARES
+   ========================================== */
 
 @media (max-width: 650px) {
 
-body {
-    padding: 20px 10px;
+    body {
+        padding: 20px 10px;
+    }
+
+    .contenedor {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .configuracion {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #cantidadEvaluaciones {
+        width: 100%;
+    }
+
+    #btnContinuar {
+        width: 100%;
+    }
+
+    #evaluaciones > div {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .porcentaje,
+    .nota {
+        width: 100%;
+    }
+
+    #btnCalcular {
+        width: 100%;
+    }
+
+    .resultado-redondeado {
+        padding: 16px;
+    }
+
+    .resultado-redondeado strong {
+        font-size: 26px;
+    }
 }
 
-.contenedor {
-    padding: 20px;
-}
-
-h1 {
-    font-size: 26px;
-}
-
-.configuracion {
-    flex-direction: column;
-    align-items: stretch;
-}
-
-#cantidadEvaluaciones {
-    width: 100%;
-}
-
-#btnContinuar {
-    width: 100%;
-}
-
-#evaluaciones > div {
-    grid-template-columns: 1fr;
-    gap: 8px;
-}
-
-.porcentaje,
-.nota {
-    width: 100%;
-}
-
-#btnCalcular {
-    width: 100%;
-}
-
-}
 
 /* ==========================================
    BOTÓN VOLVER
@@ -290,27 +309,16 @@ h1 {
 
 .volver {
     display: block;
-
     width: 100%;
-
     margin-top: 20px;
-
     padding: 12px;
-
     border-radius: 7px;
-
     background-color: #e7eee9;
-
     color: #006633;
-
     text-decoration: none;
-
     text-align: center;
-
     font-size: 15px;
-
     font-weight: bold;
-
     transition: 0.2s;
 }
 
